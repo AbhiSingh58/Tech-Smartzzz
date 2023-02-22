@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+.tit{
+  text-decoration: underline;
+  color: #ff000091;
+  cursor: pointer;
+}
+
+ .nav{
+   margin-top: 1.5em;
+   margin-bottom: 1.5em;
+
+   border-bottom: 1px solid rgb(160, 160, 160);
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin:auto;
+   /* height:5vh; */
+   justify-content:space-between;
+  }
+  .logo{
+    font-size:3vh;
+    margin: 1vw;
+    color: #ff000091;
+    cursor: pointer;
+  }
+  .navs{
+    margin-right:2vw;
+   /* border: 1px solid red; */
+
+
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid red; */
+   height:91vh;
+  }
+
+  .mainwe1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   /* border: 1px solid red; */
+   height:91vh;
+  }
+  .cntpic{
+    background-color: white ;
+    /* border:1px solid red; */
+  }
+  .cntpic2{
+    /* border:1px solid red; */
+    /* width: %; */
+    display: flex ;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+     padding-right: 2vw;
+     padding-left: 2vw;
+  }
+
+  .conts{
+    height: 100%;
+   /* border: 1px solid red; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content:center;
+   flex-wrap:column ;
+
+  }
+
+  .hombgimg{
+     
+    background-image:
+    url("https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&&w=870&q=80");
+  background-repeat:no-repeat; 
+    
+  }
+  .homecom{ 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content:center;
+    flex-wrap:column ;
+  }
+  .sec1{
+    font-size: 1em;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    /* height: 100%; */
+   /* border: 1px solid green; */
+  }
+
+  .secwe1s{
+    font-size: 1em;
+    width: 100%;
+    /* text-align: center;
+    align-items: center; */
+    line-height: 2em;
+    height: 100%;
+   /* border: 1px solid green; */
+  }
+  .sec2{
+    /* border: 1px solid  green; */
+    text-align: center;
+    /* height: 100%; */
+
+    width: 50%;
+
+  }
+  
+  .navsa{
+    /* margin: 0.6rem; */
+    padding: 0.3em;
+
+    text-decoration-line: none;
+    color: rgb(160, 160, 160);
+  }
+  .navsa:hover{
+    font-weight: 600;
+  color: #ff000091;
+text-decoration: underline;
+  }
+  .im{
+    width: 70%;
+    animation-duration:6s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+  }
+  .im2{
+    width: 70%;
+    animation-duration:3s;
+    animation-name: bounce2;
+    animation-iteration-count: infinite;
+
+  }
+  .icon{
+    cursor: pointer;
+    margin: 0.2em;
+  }
+  .icon:hover{
+  font-size:larger;
+    color: #ff000091;
+
+  }
+  .flo{
+    margin: 0.2em;
+    border-right: 3px solid rgb(160, 160, 160);
+    padding: 0.2em;
+  }
+  .form{
+    
+    width: 25vw; 
+    height: 70vh; 
+    display: flex; 
+    flex-direction:column; 
+    justify-content: center;
+     /* padding-right:2em;  */
+    /* padding-left: 2em; */
+    background-color: white; 
+    border-radius: 40px 10px;
+  } 
+  
+  @keyframes bounce {
+    from {
+      margin-left: -50%;
+      /* margin-top: -7px; */
+      /* width: 300%; */
+    }
+  
+    to {
+      margin-right: -20%;
+      /* margin-bottom: -7px; */
+
+      /* width: 100%; */
+    }
+  }
+  .shd{
+    cursor: pointer;
+    animation-duration:2s;
+    /* animation-delay: 2s; */
+    animation-name: slidein;
+
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .card:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+  }
+  .fooot{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+     position: fixed;
+     bottom: 0;
+  }
+
+  @keyframes bounce2 {
+    0%{
+      margin-top: -10%;
+    }
+    75%{
+      margin-bottom: -25%;
+    }
+    100%{
+      margin-top: -10%;
+
+
+
+    }
+
+    
+  }
+  
+  .fullhm{
+    color:rgb(122 121 121);
+  }
+  .fullhm:hover{
+    color:#ff000091;
+
+  }
+  .hamburger:hover{
+    color:#ff000091;
+  }
+  .hambr{
+    display: none;
+  }
+  .mainpageH{
+    text-align: start;
+     padding: 7rem;
+     width: 100%;
+    line-height: 3em;
+    /* border: 1px solid red; */
+
+  }
+
+  .mainpageH12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15rem;
+    width: 100%;
+    height: 100%;
+    line-height: 2em;
+    /* border: 1px solid red; */
+    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bt{
+  background-color: white;
+   color: #ff000091;
+    border: 1px solid red;
+     font-size: 1vw;
+}
+
+.bt:hover{
+  background-color: #ff000091;
+  color: white;
+  border: none;
+}
+ @media screen and (max-width: 924px) { 
+   .cntpic{
+     display: none;
+   }
+  .sec2{
+    display: none;
+  }
+  .mainh{
+  font-size: 5.5vw;
+
+  }
+  .mainpageH{
+    /* border: 1px solid red; */
+    text-align:start;
+  padding: 0rem;
+
+  }
+  .conts{
+    /* border: 1px solid red; */
+    text-align: center;
+  }
+  .bt{
+    font-size: 2vw;
+  }
+  .hambr{
+    display: block;
+  }
+  .navs{
+    display: none;
+  }
+}
+@media (min-width:425px) and (max-width:675px){
+  .mainpageH{
+    text-align:"";
+  }
+  .mainh{
+    /* font-size: 5.8vw; */
+  }
+  .mainh3{
+    font-size:3vw;
+    
+  }
+  
+  
+}
+@media (min-width:320px) and (max-width:425px) {
+  .mainpageH{
+    /* border: 2px solid red; */
+    /* width: 50vw;
+    height: 50vh; */
+  }
+  .mainh3{
+    font-size:3vw;
+    
+  }
+  .cntpic2{
+    width: 100%;
+  }
+}
+    
+  
+
+
