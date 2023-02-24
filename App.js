@@ -39,10 +39,10 @@ http.createServer(async (req, res) => {
     if (process.env.NODE_ENV == 'production') {
     if (req.method === 'GET' && req.url === '/') {
         const fs = require('fs');
-        fs.readFile('./Client/build/index.html', function(err, data) {
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            res.write(data);
-            return res.end();
+        await fs.readFile('./Client/build/index.html', function(err, data) {
+            res.writeHead(200, {'Content-Type': 'html'});
+            res.end(data, 'utf-8');
+            
           });
     }
 
