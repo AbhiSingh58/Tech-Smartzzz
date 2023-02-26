@@ -41,12 +41,12 @@ const Contact = () => {
                         'Content-Type': 'text/plain'
                     }
                 }).then((res) => {
-                    if (res.status === 200 && res.statusText === 'OK') {
+                    if (res.status === 200) {
                         alert("Thanks for your inquiry. We'll contact you shortly")
                     }
                     updateval(initialState)
                 })
-                
+
             }
         }
         else {
