@@ -35,7 +35,7 @@ const Contact = () => {
             else {
                 await axios({
                     method: 'post',
-                    url: 'https://tech-smartzz-api.onrender.com/post-data',
+                    url: 'https://tech-smartzz-api.onrender.com',
                     data: JSON.stringify(cuurval),
                     headers: {
                         'Content-Type': 'text/plain'
@@ -46,7 +46,7 @@ const Contact = () => {
                     }
                     updateval(initialState)
                 })
-
+                
             }
         }
         else {

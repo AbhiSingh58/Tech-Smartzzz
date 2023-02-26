@@ -1,3 +1,4 @@
 module.exports = {
-    mongoUrl:process.env.mongoUrl
+    mongoUrl:process.env.mongoUrl,
+    PORT:process.env.PORT
 }

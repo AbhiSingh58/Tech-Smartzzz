@@ -1,14 +1,15 @@
 const http = require('http')
 const { MongoClient } = require('mongodb')
-const { mongoUrl } = require('./Config/Keys')
+const { mongoUrl, PORT } = require('./Config/Keys')
 
 const client = new MongoClient(mongoUrl);
 const db = client.db('customerInfo')
 
 http.createServer(async (req, res) => {
     const supportedCollections = await db.listCollections().toArray((err, names) => names)
+    console.log(req.url)
 
-    if (req.method === 'POST' && req.url === 'post-data') {
+    if (req.method === 'POST') {
         let body = '';
         req.on('data', chunk => {
             body += chunk.toString(); // convert Buffer to string
@@ -34,5 +35,5 @@ http.createServer(async (req, res) => {
             res.end()
         });
     }
-}).listen(process.env.PORT || 8080);
+}).listen(PORT);
 
