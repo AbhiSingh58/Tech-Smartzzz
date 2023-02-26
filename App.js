@@ -8,7 +8,7 @@ const db = client.db('customerInfo')
 http.createServer(async (req, res) => {
     const supportedCollections = await db.listCollections().toArray((err, names) => names)
 
-    if (req.method === 'POST') {
+    if (req.method === 'POST' && req.url === 'post-data') {
         let body = '';
         req.on('data', chunk => {
             body += chunk.toString(); // convert Buffer to string
@@ -34,19 +34,5 @@ http.createServer(async (req, res) => {
             res.end()
         });
     }
-
-
-    if (process.env.NODE_ENV == 'production') {
-    if (req.method === 'GET' && req.url === '/') {
-        const fs = require('fs');
-        await fs.readFile('./Client/build/index.html', function(err, data) {
-            res.writeHead(200, {'Content-Type': 'html'});
-            res.end(data, 'utf-8');
-            
-          });
-    }
-
-    }
-    // res.end('ok')
 }).listen(process.env.PORT || 8080);
 
